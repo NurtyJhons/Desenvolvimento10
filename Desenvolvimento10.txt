@@ -7,15 +7,16 @@ Faça uma função calculadora de dois números com três parâmetros: os dois p
 Caso seja inserido um número de operação que não exista, o resultado deverá ser 0.
 
 def calculadora(num1, num2, operacao):
-	soma = (num1 + num2)
-	return soma
-	subtracao = (num1 - num2)
-	return subtracao
-	multiplicacao = (num1 * num2)
-	return multiplicacao
-	divisao = (num1 / num2)
-	return divisao
-num1 = 10
-num2 = 5
+    if (operacao == 1):
+        return num1 + num2
+    elif (operacao == 2):
+        return num1 - num2
+    elif (operacao == 3):
+        return num1 * num2
+    elif (operacao == 4):
+        return num1 / num2
+    else:
+        return 0
 
-print (calculadora(num1, num2, operacao))
+resultado = calculadora(2,2,4)
+print(resultado)
